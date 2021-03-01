@@ -1,0 +1,45 @@
+@media (min-width: 1444px) {
+	.widthlap {
+		background-color: #ebedf3;
+	}
+}
+@media (min-width: 1444px) {
+    .container-widthlap {
+        background-color: #fff;
+        max-width: 1444px;
+        margin: 0 auto!important;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+body {
+    background-color: #141414 !important;
+}
+
+.bg-black {
+    background-color: #141414 !important;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+.lineheight20 {
+    line-height: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.years {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 30px;
+}
