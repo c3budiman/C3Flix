@@ -5,7 +5,7 @@ import rootReducer from './reducers/all';
 
 const store = createStore(rootReducer, {}, applyMiddleware(
   promise,
-  createLogger({ collapsed: true }),
+  // createLogger({ collapsed: true }),
 ));
 
 export default store;
