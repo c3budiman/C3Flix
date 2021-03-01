@@ -13,7 +13,7 @@ const LoRow = (props) => {
 	useEffect(() => {
 		store.dispatch(getFeatureMovie(props.movieName, props.year))
 
-		}, [props.movieName]);
+		}, [props.movieName, props.year]);
 	const [delayHandler, setDelayHandler] = useState(null)
 	let LoadingFeature = useSelector(state => state.omdbReducer.getFeaturePending)
 	let FeaturedMovie = useSelector(state => state.omdbReducer.featureMovie)

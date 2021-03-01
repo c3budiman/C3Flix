@@ -1,6 +1,6 @@
 import React, { 
 	useEffect, 
-	useState 
+	// useState 
 } from 'react';
 import { useParams } from 'react-router-dom'
 import store from '../../../redux/store';
@@ -14,7 +14,7 @@ const Detail = (props) => {
     let data = useSelector(state => state.omdbDetail.data)
     useEffect(() => {
         store.dispatch(getDetailOmdb(id))
-	}, []);
+	}, [id]);
     return (
         <>
             <div className="loRow">

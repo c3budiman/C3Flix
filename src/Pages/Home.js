@@ -1,6 +1,6 @@
 import '../App.css';
 import React, { 
-	useState 
+	// useState 
 } from 'react';
 import Banner from '../components/parts/Banner'
 import LoRow from '../components/parts/LoRow'

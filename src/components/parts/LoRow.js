@@ -12,16 +12,16 @@ import {checkImage} from '../../utils/strHelpers'
 
 const LoRow = (props) => {
 	const [delayHandler, setDelayHandler] = useState(null)
-	const [page, setPage] = useState(1)
+	// const [page, setPage] = useState(1)
 	// const [load, setLoad] = useState(false)
 	// const [initialLoad,setinitialLoad] = useState(true)
 	let LoadingFeature = useSelector(state => state.omdbReducer.getFeaturePending)
 	let FeaturedMovie = useSelector(state => state.omdbReducer.featureMovie)
-	let meta = useSelector(state => state.omdbReducer)
+	// let meta = useSelector(state => state.omdbReducer)
 
 	useEffect(() => {
         store.dispatch(getFeatureMovie("man", ""))
-		setPage(page+1)
+		// setPage(page+1)
     }, []);
 
 	const [shownDetailId, setShownDetail] = useState("");

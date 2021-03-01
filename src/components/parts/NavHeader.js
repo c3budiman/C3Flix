@@ -22,7 +22,7 @@ const NavHeader = (props) => {
     const [isSearch, setIsSearch] = useState(false);
     const [yScrollPosition, setYScrollPosition] = useState(0);
     const [MovieSearch, setMovieSearch] = useState("");
-    const [page, setPage] = useState(1);
+    // const [page, setPage] = useState(1);
 
     const [query, setQuery] = useState("");
 
@@ -34,7 +34,7 @@ const NavHeader = (props) => {
             setYScrollPosition(currentScrollY)
         };
         window.addEventListener("scroll", handleScroll, { passive: true });
-        const timeOutId = setTimeout(() => { if(query !== "") store.dispatch(getSearchMovie(query, page)) }, 500);
+        const timeOutId = setTimeout(() => { if(query !== "") store.dispatch(getSearchMovie(query, 1)) }, 500);
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
